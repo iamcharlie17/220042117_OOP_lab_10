@@ -6,14 +6,21 @@ class Light extends SmartDevice implements PoweredDevice {
         super("Light", location);
     }
 
+    public void setIntensity(int intensity) {
+        this.intensity = intensity;
+    }
 
-    @Override
-    public void adjustPowerSettings() {
-        System.out.println("Adjusting light intensity and color.");
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
-    void adjustSettings() {
-        System.out.println("Adjusting light settings");
+    public void adjustSettings() {
+        System.out.println("Adjusting light settings to " + intensity + " Lux and color " + color);
+    }
+
+    @Override
+    public void adjustPowerSettings() {
+        System.out.println("Adjusting light intensity to " + intensity + " Lux and color to " + color);
     }
 }

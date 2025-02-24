@@ -1,16 +1,17 @@
-class SmokeDetector extends NotifiableDevice implements SensoryDevice{
+class SmokeDetector extends NotifiableDevice implements SensoryDevice {
     private boolean sprinkleActive;
 
     public SmokeDetector(String location) {
         super("Smoke Detector", location);
+        this.sprinkleActive = false;
     }
 
-    public void activateSprinkle(){
+    public void activateSprinkle() {
         sprinkleActive = true;
         System.out.println("Sprinkle activated.");
     }
 
-    public void deactivateSprinkle(){
+    public void deactivateSprinkle() {
         sprinkleActive = false;
         System.out.println("Sprinkle deactivated.");
     }

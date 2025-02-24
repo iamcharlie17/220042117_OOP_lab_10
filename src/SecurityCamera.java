@@ -2,7 +2,8 @@ class SecurityCamera extends NotifiableDevice {
     private boolean autoSave;
 
     public SecurityCamera(String location) {
-        super("Security Camera",location);
+        super("Security Camera", location);
+        this.autoSave = false;
     }
 
     public void toggleAutoSave() {
@@ -11,7 +12,7 @@ class SecurityCamera extends NotifiableDevice {
     }
 
     @Override
-    void adjustSettings() {
-        System.out.println("Adjusting security camera settings");
+    public void adjustSettings() {
+        System.out.println("Adjusting security camera settings...");
     }
 }
