@@ -1,2 +1,3 @@
-public class SecurityDevice {
+interface SecurityDevice {
+    void verifyPassword(String password);
 }

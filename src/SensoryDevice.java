@@ -1,2 +1,3 @@
-public class SensoryDevice {
+interface SensoryDevice {
+    void measure();
 }

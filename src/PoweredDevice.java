@@ -1,2 +1,3 @@
-public class PoweredDevice {
+interface PoweredDevice {
+    void adjustPowerSettings();
 }
